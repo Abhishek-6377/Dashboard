@@ -9,8 +9,12 @@ const jwtKey = 'e-comm'; // In production, use environment variables for secrets
 const app = express();
 const port = 5000;
 
-// Enable CORS for frontend origin with credentials support if needed
-app.use(cors({ origin: 'https://dashboard-1-cg1s.onrender.com', credentials: true }));
+app.use(
+  cors({
+    origin: ['http://localhost:3000', 'https://astonishing-vacherin-077478.netlify.app'],
+    credentials: true,
+  })
+);
 
 // JSON body parser
 app.use(express.json());

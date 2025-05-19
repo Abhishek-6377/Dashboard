@@ -8,7 +8,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon"
+    "start": "nodemon",
+    "proxy": "https://dashboard-1-cg1s.onrender.com"
   },
   "dependencies": {
     "bcrypt": "^6.0.0",
